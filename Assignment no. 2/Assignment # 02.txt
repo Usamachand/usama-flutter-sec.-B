@@ -1,0 +1,29 @@
+void main(){
+print('This is my using conditional statement');
+num maths = 45;
+num phy = 55;
+num eng = 65;
+num islm = 45;
+num che = 66;
+var obtain_marks = (maths+phy+eng+islm+che);
+var total_marks = 500;
+num percentage = (obtain_marks*100/total_marks);
+print ('obtain_marks:${obtain_marks}');
+print ('percentage: ${obtain_marks*100/total_marks}%');
+if (percentage>=80) {
+  print('percentage is A+');
+}else if(percentage>=70){
+  print('percentage is : A');
+}else if (percentage>=60){
+  print('percentage is : B');
+}else if (percentage>=40){
+  print('percentage is : C');
+}else{
+  print('percentage is D');
+}
+
+
+
+
+
+print("Hellow")
