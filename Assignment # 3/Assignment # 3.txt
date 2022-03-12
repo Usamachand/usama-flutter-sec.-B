@@ -1,0 +1,148 @@
+// Types of operators:
+
+// 1)Arithmetic Operators
+// 2)Assignment Operators
+// 3)Relational Operators
+// 4)Logical Operators
+// 5)Conditional Operators
+// 6)Type Test Operators
+// 7)Bitwise Operators
+// 8)Cascade Notation Operators
+
+//Arithmetic operator (example)
+int a = 5;
+int b = 7;
+print(a+b);
+var abc = 54;
+var bcd = 34;
+print(abc*bcd);
+int x = 44;
+int y = 5;
+  var z = x / y;
+ print("value of x and y: $z");
+ int x1 = 45;
+    int y1 = 35;
+ 
+    // Assigning value to variable z1
+    var z1 = x1 / y1;
+    print(z1.toStringAsFixed(2));
+ 
+    // Assigning value to variable s
+    var s;  //s has a null value
+    s ??= x1 * y1; // Value is assign to s as it is null
+    print(s);
+     int x2 = 14;
+    int y2 = 4;
+ 
+    // Greater between x2 and y2
+    var z2 = x2 > y2;
+    print("x2 is greater than y2 is ${z2}");
+ 
+    // Equality between x2 and y2
+    var d = x2 == y2;
+    print("x2 and y2 are equal is ${d}");
+    int x3 = 25;
+    int y3 = 10;
+ 
+    // Using And Operator
+    bool z3 = x3 > 5 && y3 == 10;
+    print(z3);
+ 
+    // Using Or Operator
+    bool i = x3 < 10 || y3 > 25;
+    print(i);
+ 
+    // Using Not Operator
+    bool d3 = !(x3 > 10);
+    print(d3);
+
+    int x4 = 5;
+    int y4 = 7;
+    // Conditional Statement
+    var z4 = (x4 * y4 > 45) ? " print the fisrt condition " : "print the second condition";
+    print(z4);
+     // Type Test Operator
+   String head  = 'Operators in Dart';
+   // Using is to compare
+   print(head is String);
+   int head_2 = 45;
+   print(head_2 is bool);
+   
+   // Bitwise  operator
+      int c = 15;
+      int aa = 12;
+   var bitwise =   aa^c;
+   print("Bitwise result: $bitwise" );
+   //Question # 02
+   var cost_one_ticket = 600;
+   var ticket_price = cost_one_ticket;
+   print(ticket_price*5);
+
+List<int> first = [1, 2, 3, 4, 5, 6, 7];
+  List<int> second = [3, 5, 6, 7, 9, 10];
+  List<int> difference = first.toSet().difference(second.toSet()).toList();
+  print(difference.toString());
+// Question # 07
+
+var email_address = ('asad@abc');
+var password1 = ('asad123');
+var password2 = ('fahad123');
+print(email_address);
+print(password1);
+print(password2);
+if((email_address == 'asad@abc') && (password1 == 'asad123')){
+  print('login successful');
+} else if (!(email_address == 'asad@abc') && (password1 == 'asad123' 'fahad123')) {
+  print('please enter your email');
+} else if ((password2 == 'fahad@abc') && (password1 == 'asad123' 'fahad123')) {
+  print('correct password');
+} else if (!(password1 == 'asad123' ) && (email_address == 'asad@abc')){
+  print('please enter your password');
+}else {
+  print('invalid');
+//Question # 09
+// example of legal variables
+ 1) var69_a 2) int23 3) bool@ 4) String$ 5) double_3
+ 
+ //example of illegal variables
+ 1) 69var_a 2) $vars 3) @ bool 4) && int 5) #var
+
+//Question # 13
+////list method
+ var myList= [1,2,3,4,5];
+ print(myList.sublist(1,3)); //list#1
+
+ myList.shuffle();
+ print('$myList'); // list # 2
+ 
+ var first_List= [6,5,4,3,2,1];
+ print(first_List.reversed.toList()); // list # 3
+
+  var myList1 = [1, 2, 3, 4, 5];
+ print(myList1.getRange(1,4)); // list # 4
+
+ var single_List= [0,1,2,3,4,5,6];
+ single_List.replaceRange(2,3, [10]);
+ print('$single_List'); // list # 5
+
+////String method
+ String no2 = "hello"; 
+   String no3 = "world"; 
+   String head = no3+ no2; 
+   print("string method : ${head}"); //string # 1 
+
+ var name = "irfan";
+    var age = 25;
+    print("I am ${name} I am ${age} years old"); //string # 2
+
+    var mylist3 = [0,'one','two','three','four','five'];
+mylist3[3]=3;
+print(mylist3); //string # 3
+
+ var ass ="faraz aliyan ashir faizan ahad ansar";
+ print(ass.split(' ')); //string # 4
+
+var sign = 'My name is asaad khan';
+print(sign.toUpperCase()); //string # 5
+
+}
